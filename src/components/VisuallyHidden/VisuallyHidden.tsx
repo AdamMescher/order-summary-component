@@ -17,16 +17,16 @@ const Wrapper = styled.span`
   border: 0;
 `;
 
-const VisuallyHidden = ({ children, ...delegated }: Props) => {
+const VisuallyHidden = ({ children, ...delegated }: Props): React.ReactNode => {
   const [forceShow, setForceShow] = React.useState(false);
   React.useEffect(() => {
     if (process.env.NODE_ENV !== "production") {
-      const handleKeyDown = (ev: KeyboardEvent) => {
+      const handleKeyDown = (ev: KeyboardEvent): void => {
         if (ev.key === "Alt") {
           setForceShow(true);
         }
       };
-      const handleKeyUp = (ev: KeyboardEvent) => {
+      const handleKeyUp = (ev: KeyboardEvent): void => {
         if (ev.key === "Alt") {
           setForceShow(false);
         }
