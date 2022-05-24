@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import OrderSummary from "../OrderSummary";
+import VisuallyHidden from "../VisuallyHidden";
 import PatternBackgroundDesktop from "../../assets/pattern-background-desktop.svg";
 import PatternBackgroundMobile from "../../assets/pattern-background-mobile.svg";
 
@@ -48,6 +49,9 @@ const BackgroundDesktop = styled(Background)`
 const App = () => {
   return (
     <Wrapper data-testid="app">
+      <VisuallyHidden>
+        <h1>Order Summary Component sandbox</h1>
+      </VisuallyHidden>
       <OrderSummary />
       <BackgroundMobile>
         <img src={PatternBackgroundDesktop} alt="" />
