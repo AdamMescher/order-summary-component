@@ -17,7 +17,7 @@ const Wrapper = styled.span`
   border: 0;
 `;
 
-const VisuallyHidden = ({ children, ...delegated }: Props) => {
+const VisuallyHidden = ({ children, ...delegated }: Props): JSX.Element => {
   const [forceShow, setForceShow] = React.useState(false);
   React.useEffect(() => {
     if (process.env.NODE_ENV !== "production") {
