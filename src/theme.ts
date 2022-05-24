@@ -40,7 +40,7 @@ interface Theme {
 
 const theme: Theme = {
   breakpoints: {
-    mobile: "375px",
+    mobile: "475px",
     desktop: "1440px"
   },
   color: {

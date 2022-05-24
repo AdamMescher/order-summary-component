@@ -7,10 +7,18 @@ const Wrapper = styled.main`
   width: 100%;
   display: grid;
   place-items: center;
-
-  @media (max-width: var(--breakpoint-mobile)) {
+  background-color: var(--veryPaleBlue);
+  background-image: url("/assets/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: 100% 50%;
+  @media (max-width: 475px) {
     padding-left: 24px;
     padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("");
   }
 `;
 

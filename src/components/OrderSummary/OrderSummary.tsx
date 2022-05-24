@@ -9,7 +9,7 @@ const Wrapper = styled.section`
   border-radius: 12px;
   overflow: hidden;
   @media (max-width: var(--breakpoint-mobile)) {
-    max-width: 325px;
+    min-width: 325px;
   }
 `;
 const HeroWrapper = styled.div`
