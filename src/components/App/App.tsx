@@ -51,6 +51,7 @@ const App = () => {
     <Wrapper data-testid="app">
       <VisuallyHidden>
         <h1>Order Summary Component sandbox</h1>
+        <h2>necessary for header order a11y error</h2>
       </VisuallyHidden>
       <OrderSummary />
       <BackgroundMobile>
